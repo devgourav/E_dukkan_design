@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>E-Dukaan Login</title>
+	<style type="text/css">
+		body{
+			display: block;
+			margin: 0px;
+			padding: 0px;
+			background-color: #334466;
+			color: #66ff88;
+			width: 100%;
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+		}
+		input,select{
+			margin: 5px;
+			padding: 5px 0;
+			width: 100%;
+		}
+		a{
+			text-decoration: none;
+		}
+		#mainheader{
+			background-color: #556677;
+			margin: 0px;
+			padding: 10px;
+			width: 100%;
+			box-shadow: 0 8px 6px -6px black;
+		}
+		#mainfooter{
+			background-color: #556677;
+			margin: 0px;
+			padding: 10px;
+			width: 100%;
+			box-shadow: 0 -8px 6px -6px black;
+		}
+		#title{
+			text-align: center;
+			font: 1.5em solid;
+			margin: 5px;
+			padding: 5px;
+		}
+		#salutaion{
+			text-align: right;
+			font: 15px solid;
+			margin: 0px 10px 0px 0px;
+			padding: 5px;
+		}
+		#logo{
+			position: absolute;
+			top: 5px;
+			left: 15px;
+		}
+		#loginbox{
+			background-color: #556677;
+			margin-left: 40%;
+			margin-top: 5%;
+			margin-right: 20%;
+			margin-bottom: 10%;
+			padding: 20px 20px 0px 20px;
+			box-shadow:-3px 3px 6px 0px black;
+			text-align: center;
+			height:40vh;
+    		width:50vh;
+		}
+		.login_button{
+			position: relative;
+			top: 35px;
+			background-color: #556677;
+			color: #ccc;
+			border: 1px solid #ccc;
+			margin: 5px;
+			margin-top: 20px;
+			padding: 5px;
+		}
+		.login_button:active{
+			transform: translate(0px,1px);
+  			-webkit-transform: translate(0px,1px);
+		}
+		.login_button:hover{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<section id='mainheader'>
+		<p id='title'>E-DUKKAN</p>
+		<p id='salutaion'>Hello Mr.Dev | Signout</p>
+		<p id='logo'><img src="koala.jpg" width='60px' height='50px'></p>
+	</section>
+	<section id='loginbox'>
+		<table>
+			<tr id='login_textbox'>
+				<td>Username:</td>
+				<td><input type='textbox'/></td>
+			</tr>
+			<tr id='login_textbox'>
+				<td>Password:</td>
+				<td><input type='password'/></td>
+			</tr>
+			<tr id='login_dropdown'>
+				<td >Language:</td>
+				<td><select>
+	   					<option selected>Select</option>
+	   					<option value="eng">English</option>
+	   					<option value="hin">Hindi</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<a href="" class='login_button'>Login</a>
+		<a href="" class='login_button'>Reset</a>
+	</section>
+	<section id='mainfooter'>
+		<p id='title'>Copyrights with devgourav</p>
+	</section>
+</body>
+</html>
