@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+	<head>
+		<title>Add customer</title>
+  		<link rel="stylesheet" type="text/css" href="../css/style.css">
+  		<link rel="stylesheet" type="text/css" href="../css/add_cust.css">
+  		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	</head>
+
+	<body>
+		<section id='mainheader'>
+		<p id='title'>E-DUKKAN</p>
+		<p id='salutaion'>Hello Mr.Dev | Signout</p>
+		<p id='logo'><img src="../images/e_dukaan.png" width='60px' height='50px'></p>
+	</section>
+	    <div id="formDiv" >
+	    	<p><a href="modify_cust.html">Search an existing customer </a></p>
+	         <form action="add_cust.php" id="form" name="form" method="POST">
+	        	<center><p>ADD CUSTOMER</p></center>
+	            <div>
+	            	<label>Customer Name [ENGLISH]:<span class="asterik">*</span></label>
+					<input type="text" id="nameEn" name="nameEn" class="input" maxlength="30" required />
+	            </div>
+	             <div>
+	            	<label>Phone Number:</label>
+	            	<input id="phone" name="phone" class="input" type="text" maxlength="40"/>
+	        	</div>
+	            <div>
+	            	<label>Address:<span class="asterik">*</span></label>
+	             	<input id="addr" name="addr" class="input" type="text" maxlength="50" required />
+	       		</div>
+	            <div>
+	            	<label>Locality:</label>
+	            	<input id="local" name="local" class="input" type="text" maxlength="50" />
+	       		</div>
+	            <div>
+	            	<label>City/Village:</label>
+	            	<input id="city" name="city" class="input" type="text" maxlength="30" />
+	        	</div>
+	            <div>
+	            	<label>State:<span class="asterik">*</span></label>
+	            	<input id="state" name="state" class="input" type="text" maxlength="30" required />
+	            </div>
+	            <div>
+	            	<label>Pin-Code:<span class="asterik">*</span></label>
+	            	<input id="pin" name="pin" class="input" type="text"  maxlength="6" required />
+	        	</div>
+	        	<hr><hr>
+	            <div>
+	            	<label>Amount Payable:</label>
+	             	<input id="amtp" name="amtp" class="input" type="text"/>
+	         	</div>
+	            <div>
+	            	<label>Amount Received:</label>
+	            	<input id="amtr" name="amtr" class="input" type="text"/>
+	        	</div>
+	        	<hr>
+	            <div>
+	            	<label>Comment:</label>
+	            	<input id="comnt" name="comnt" class="input" type="text" maxlength="100"/>
+	        	</div>     
+	            <!--input type="text" class="input" id="txtHindi" name="nameHi" onfocus="showKeyboard('txtHindi','textHi1','in');" onblur="showKeyboard('txtHindi','textHi1','out');" required />
+	            <div id="textHi1" style="visibility: hidden; border-collapse: collapse;float: right; "></div>
+	            <br/> <br/-->
+	   
+	            </form>
+	        <button onclick="submitForm();" style="margin-top: 40px;">SUBMIT</button>
+	        
+	    </div>
+	   	<section id='mainfooter'>
+			<p id='title'>Copyrights with devgourav</p>
+		</section>
+	</body>
+</html>
