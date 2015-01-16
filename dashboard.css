@@ -1,0 +1,39 @@
+.square-box{
+    display:inline-table;
+    position: relative;
+    width: 30vh;
+    overflow: hidden;
+    background: rgb(150,150,150);
+    margin:4.5%;
+    box-shadow:0px 4px 6px 0px black;
+}
+.square-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.square-content{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: rgb(255,255,255);
+}
+.square-content div {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+.square-content span {
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255,255,255);
+}
+.square-box:hover{
+    background-color: rgb(80,80,80);
+    transform: translate(2px,0px);
+    box-shadow:0px 0px 0px black;
+    color: rgb(255,255,255);
+}
