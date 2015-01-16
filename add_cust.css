@@ -1,0 +1,21 @@
+            #formDiv{
+                color:rgb(0,0,0);
+                background-color: rgb(150,150,150);
+                margin: 1%;
+                padding: 2%;
+            }
+            #textHi1,#textHi2{
+                position: relative;
+            }
+            .label{
+
+            }
+            .asterik{
+                color:rgb(0,0,0);
+            }
+            label, input,textarea { 
+                display: table-cell; 
+            }
+            form div { 
+                display: table-row; 
+            }
