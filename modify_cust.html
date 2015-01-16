@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+    	<title>Modify and search customers</title>
+  		<link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/modify_cust.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    	<section id='mainheader'>
+            <p id='title'>E-DUKKAN</p>
+            <p id='salutaion'>Hello Mr.Dev | Signout</p>
+            <p id='logo'><img src="../images/e_dukaan.png" width='60px' height='50px'></p>
+        </section>
+        
+
+        <div id="wrapper">
+        <form action="modify_cust.php" method="POST" id="search_form">
+            <p><a href="">Add a new customer</a></p>
+            
+            <center><p>Search Customer</p></center>
+            <label>Enter Customer name/id: </label>
+            <input id="input" name="input" type="text" min="3"/></br>
+        	<input type="submit" value="Search" class="submit"/>
+            <input type="reset" value="Clear" class="reset"/>
+        </form>
+        <div>
+            <form id="modify" method="POST" action="modify_cust.php">
+                <table id="result">
+
+                        <thead id="headRow">
+                            <td>Cutomer ID</td>
+                            <td>Name</td>
+                            <td>Amount Remaining</td>
+                            <td>Amount Payable</td>
+                            <td>Created On</td>
+                            <td>Address</td>
+                            <td>Locality</td>
+                            <td>Village</td>
+                            <td>City</td>
+                            <td>State</td>
+                            <td>Pincode</td>
+                            <td>Phone</td>
+                            <td>Comment</td>
+                         </thead>
+
+                         <tr class="result">
+                            <td>123535</td>
+                            <td>Dev</td>
+                            <td>2345</td>
+                            <td>1234</td>
+                            <td>25/12/1992</td>
+                            <td>Infosys Phase 2</td>
+                            <td>Hinjewadi</td>
+                            <td>Hinjeawdi</td>
+                            <td>pune</td>
+                            <td>Maharastra</td>
+                            <td>600745</td>
+                            <td>9923834174</td>
+                            <td>this is a good guy</td>
+                        </tr>
+
+                        <tr class="result">
+                            <td>123535</td>
+                            <td>Dev</td>
+                            <td>2345</td>
+                            <td>1234</td>
+                            <td>25/12/1992</td>
+                            <td>Infosys Phase 2</td>
+                            <td>Hinjewadi</td>
+                            <td>Hinjeawdi</td>
+                            <td>pune</td>
+                            <td>Maharastra</td>
+                            <td>600745</td>
+                            <td>9923834174</td>
+                            <td>this is a good guy</td>
+                        </tr>
+
+                </table>
+            </form>   
+        </div>
+    </div>  
+    <section id='mainfooter'>
+        <p id='title'>Copyrights with devgourav</p>
+    </section>
+    </body>
+</html>
